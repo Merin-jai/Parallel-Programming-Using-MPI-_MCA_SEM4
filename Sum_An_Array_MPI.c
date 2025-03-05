@@ -1,3 +1,11 @@
+// Parallel Program to Sum an Array Using MPI
+// In this program, we will distribute an array across multiple MPI processes, compute partial sums, and use MPI_Reduce to compute the final sum.
+// Steps:
+// Initialize MPI.
+// Divide the array among P processes.
+// Each process computes its partial sum.
+// Reduce all partial sums to the root process using MPI_Reduce.
+// Root process prints the final sum.
 #include <mpi.h>
 #include <stdio.h>
 
